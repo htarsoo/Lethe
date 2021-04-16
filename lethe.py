@@ -212,6 +212,8 @@ You have selected the Vulnerability Analysis module
         """)       
         nscan = input("Please select a module: ")
         if nscan == "1":
+            os.system("sudo python3 modules/arp_req.py")
+        if nscan == "2":
             import nmap3
             ip = input("Please put in the local ip of the target: ")
             nmap = nmap3.NmapHostDiscovery()
